@@ -14,6 +14,7 @@ print("----------------")
 print(titles)
 print("----------------")
 
+
 #step 3: Generate Catchy Thumbnail Ideas
 thumbnail_prompt = pr.youtube_thumbmail_generator_prompt.format(user_titles=titles)
 thumbnails = gpt.basic_generation(thumbnail_prompt)
@@ -29,6 +30,8 @@ print("Suggested Script: ")
 print("----------------")
 print(script)
 print("----------------")
+
+
 
 #step 5: Into a twitter thread
 tweet_prompt = pr.tweet_from_youtube_prompt.format(youtube_transcript=script)
